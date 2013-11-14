@@ -1,0 +1,107 @@
+.ui-sortable {
+	background-color:transparent!important;
+	padding: 0!important;
+	border-bottom: none!important;
+	margin-bottom: 20px!important;
+}
+.ui-sortable ul {
+	background-color:transparent!important;
+	margin-bottom: 0!important;
+	border-bottom: none!important;
+	padding-top: 0!important;
+	padding-left: 20px!important;
+	margin-top: -1px;
+}
+.ui-sortable li {
+    position: relative;
+}
+.ui-sortable .ns-leaf {}
+.ui-sortable .ns-leaf .ctrl_bttns {
+    display: none;
+}
+.ui-sortable .ns-branch {}
+.ui-sortable .ns-branch .ctrl_bttns {
+    position: absolute;
+    top: 8px;
+    left: 4px;
+}
+.ui-sortable .ns-collapsed > .ctrl_bttns > .collaps {
+    display: none;
+}
+.ui-sortable .ns-collapsed ul {
+    display: none;
+}
+.ui-sortable .ns-expanded > .ctrl_bttns > .expand {
+    display: none;
+}
+.ui-sortable .content {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 18px 20px 8px;
+    margin-top: -2px;
+    border-top: 1px solid #c8c8c8;
+    background-color: #eee;
+}
+.ui-sortable .content > div {}
+.ui-sortable .content > div span {
+    width: 20%;
+    display: inline-block;
+}
+.ui-sortable .content > div input {
+    width: 76%;
+}
+.ui-sortable li > a .link {
+	color: rgb(67, 96, 139)!important;
+}
+.ui-sortable li > a .link:hover {
+	text-decoration: underline;
+}
+.ui-sortable li > a {
+    background-color: rgb(221, 221, 221)!important;
+    color: #333!important;
+    border: 1px solid rgb(175, 175, 175)!important;
+}
+.ui-sortable li.selected > a {
+    background-color: #ccc!important;
+}
+.ui-sortable li > a div.pull-left {
+    padding-left: 20px;
+}
+.ui-sortable li > a div.pull-right {}
+.ui-sortable li > a div.pull-right .date {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: #777!important;
+}
+.ui-sortable li > a div.pull-right .mini {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: #aaa!important;
+    margin-right: 6px;
+}
+.ui-sortable li > a div.pull-right button {}
+.inline-button {
+    background-color: transparent;
+    border: none;
+    opacity: 0.6;
+	font-style: italic;
+}
+.h1buttons {
+    margin-top: 22px;
+    margin-left: 20px;
+}
+div.buttons {
+	margin-bottom:20px;
+}
+h4 {
+	margin-bottom:5px;
+}
+
+/* NG-CLOAK */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+} 
+
