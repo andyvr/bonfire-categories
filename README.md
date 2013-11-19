@@ -26,9 +26,8 @@ The following functions are available:
 
 **list_all_menus()** - *get the list of menus as an array of objects or empty array if no menu's found*
 
-**list_menu_categories($menu_id)** - *get full navigation for a given menu*
-**_$menu_id** _(required)_ - the id parameter for the menu.
-The function will return an array of categories objects (in case navigation have nested categories the function will return the tree object)
+**list_menu_categories($id)** - *get full navigation for a given menu 'id' _($id is required)_ - the id parameter for the menu.
+The function will return an array of category objects (in case navigation have nested categories the function will return the tree object)
 
 **find_a_category($id, $name)** - *find a category by it's 'id' or 'name' field*
 _(at least one of parameters is required)_
