@@ -2,8 +2,10 @@ bonfire-categories
 ==================
 
 Menus and categories module for Codeigniter Bonfire.
-This module uses drag-and-drop approach to manage menus and menu items, similar to the one used in the Wordpress CMS menus. Please see the screenshot: [screenshot.jpg](/screenshot.jpg)
-
+This module uses drag-and-drop approach to manage menus and menu items, similar to the one used in the Wordpress CMS menus. <br>Please see the screenshot:
+<p align="center">
+<img src="/screenshot.jpg" />
+</p>
 
 ### Installation instructions
 
