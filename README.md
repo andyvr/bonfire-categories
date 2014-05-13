@@ -34,3 +34,28 @@ The function will return an array of category objects (in case navigation have n
 **find_a_category($id, $name)** - *find a category by it's 'id' or 'name' field*
 _(at least one of parameters is required)_
 The function will return a category object if the id or name param matches an existing category, otherwise return false.
+
+>*Below is the code snipplet that shows how you can easily handle nested menus on the front-end:*
+
+```
+function build_nested_menu($categories, $outstring="") {
+	if(empty($categories)) return $outstring;
+	$outstring .= '<ul> ';
+	foreach($categories as $cat) {
+		$outstring .= '<li><a href="'.$cat->url.'">'.$cat->name.'</a> ';
+			if(isset($cat->nodes)) 
+				return build_nested_menu($cat->nodes, $outstring) .'</ul> ';
+		$outstring .= '</li> ';
+	}
+	$outstring .= '</ul> ';
+	return $outstring;
+} 
+
+// Load categories helper
+$this->load->helper('categories/categories');
+
+// Loop thru all menus
+foreach(list_all_menus() as $menu) {
+	echo build_nested_menu(list_menu_categories($menu->id));
+}
+```
